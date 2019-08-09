@@ -1,0 +1,61 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.WineBox {
+  position: relative;
+
+  .counter {
+    background: $brand-danger;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px;
+    font-weight: bold;
+    bottom: 15px;
+    position: absolute;
+    min-width: 10px;
+  }
+
+  &--recommendation-item {
+    width: 100%;
+    margin-top: 20px;
+
+    img {
+      transform: rotate(90deg);
+      margin: -70px auto -70px auto;
+    }
+
+    &--name {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 5px;
+      position: relative;
+      width: auto;
+    }
+
+    &--region {
+      margin: 5px;
+    }
+  }
+
+  &--action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+
+    .cta-link {
+      background: $brand-danger;
+      border-radius: 5px;
+      border: 2px solid $brand-danger;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 20px;
+      padding: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}

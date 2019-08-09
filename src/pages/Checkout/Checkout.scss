@@ -1,0 +1,107 @@
+@import "../../styles/common/shared";
+@import "../../styles/layout/shared";
+
+.Checkout {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height;
+    right: auto;
+    left: auto;
+  }
+
+  position: relative;
+  width: $width-box;
+  z-index: 50;
+
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    @extend %--fw_container;
+  }
+
+  &--forms {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: $header-height;
+
+    &__title {
+      width: 100%;
+      text-align: start;
+      margin: {
+        top: 40px;
+        bottom: 40px;
+      }
+    }
+
+    &__payment,
+    &__discount-code,
+    &__summary,
+    &__shipping {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-start;
+      min-height: 200px;
+      width: 45%;
+      word-wrap: break-word;
+    }
+
+    &__confirmation {
+      width: 100%;
+      margin: {
+        top: 60px;
+        bottom: 60px;
+      }
+
+      > button {
+        color: white;
+        background: $brand-danger;
+      }
+    }
+  }
+
+  button:not(.icon) {
+    border: 3px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 50px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    width: 300px;
+
+    &:not(.payment-confirmation) {
+      background-color: #fff;
+      border-color: $brand-danger;
+      border-radius: 5px;
+      color: $brand-danger;
+    }
+
+    &:hover {
+      background-color: $brand-danger;
+      color: white;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      border-color: $humility;
+      color: $humility;
+
+      &:hover {
+        background-color: #fff;
+        color: $humility;
+      }
+    }
+  }
+}

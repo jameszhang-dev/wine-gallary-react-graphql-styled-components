@@ -1,0 +1,9 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.HeaderDiscountMessage {
+  font-size: 0.5em;
+  color: $brand-danger;
+  align-self: center;
+  font-weight: bold;
+}

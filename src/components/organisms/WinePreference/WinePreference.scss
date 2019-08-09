@@ -1,0 +1,19 @@
+.WinePreference {
+  width: 100%;
+
+  &--container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--bottle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--counter {
+      display: flex;
+    }
+  }
+}

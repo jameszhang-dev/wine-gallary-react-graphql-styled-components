@@ -1,0 +1,13 @@
+@import "../../styles/common/shared";
+@import "../../styles/layout/shared";
+
+.Referral {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height;
+    right: auto;
+    left: auto;
+  }
+}

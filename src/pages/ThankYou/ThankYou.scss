@@ -1,0 +1,58 @@
+@import '../../styles/common/shared';
+@import '../../styles/layout/shared';
+
+.ThankYou {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height + 10px;
+    right: auto;
+    left: auto;
+  }
+
+  &--container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin: 50px;
+
+    @extend %--fw_container;
+  }
+
+  button {
+    background-color: #fff;
+    border: 3px solid $brand-danger;
+    border-radius: 5px;
+    color: $brand-danger;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 50px;
+    margin: 15px 5px;
+    text-transform: uppercase;
+    width: 300px;
+
+    &:first-child {
+      color: $brand-success;
+      border-color: $brand-success;
+    }
+
+    &:nth-child(2) {
+      color: $brand-danger;
+      border-color: $brand-danger;
+    }
+
+    &:first-child:hover {
+      background-color: $brand-success;
+      color: white;
+    }
+
+    &:nth-child(2):hover {
+      background-color: $brand-danger;
+      color: white;
+    }
+  }
+}

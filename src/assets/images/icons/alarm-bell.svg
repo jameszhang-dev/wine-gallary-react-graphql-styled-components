@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>alarm-bell</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols-&amp;-Palette" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="topbar_desktop_logged_in" transform="translate(-1302.000000, -31.000000)" stroke="#000000" stroke-width="1.5">
+            <g id="Group-2">
+                <g id="Group" transform="translate(1303.000000, 32.000000)">
+                    <g id="alarm-bell">
+                        <path d="M8,16.5 L8,14.625" id="Shape"></path>
+                        <path d="M8,0 C11.4517797,3.94745964e-16 14.25,2.98476833 14.25,6.66666667 C14.25,12.9297778 15.5,14 15.5,14 L0.5,14 C0.5,14 1.75,12.2968889 1.75,6.66666667 C1.75,2.98476833 4.54822031,7.89491929e-16 8,0 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

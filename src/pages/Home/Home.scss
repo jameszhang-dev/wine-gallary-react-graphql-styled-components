@@ -1,0 +1,39 @@
+@import '../../styles/common/shared';
+
+.Home {
+  width: 100%;
+
+  &--main-banner {
+    background: {
+      image: url('../../assets/images/subscription-wine-at-your-door-alt.jpg');
+      repeat: no-repeat;
+      size: cover;
+      position-y: -100px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+    &_inner {
+      align-self: center;
+      display: flex;
+      height: auto;
+      max-width: $max-width-box;
+      width: $width-box;
+      min-height: 500px;
+    }
+
+    &--content {
+      justify-self: flex-start;
+      max-width: 75%;
+
+      &--title {
+        text-align: start;
+        font-size: 6rem;
+      }
+    }
+  }
+}

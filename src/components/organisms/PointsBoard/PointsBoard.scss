@@ -1,0 +1,50 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.PointsBoard {
+  width: 100%;
+  height: auto;
+
+  &--container {
+    margin: 0 auto;
+    border: 1px solid black;
+    max-width: 400px;
+  }
+
+  &--list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &--item {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+
+    &--image {
+      width: 120px;
+      text-align: left;
+
+      img {
+        width: 100%;
+        margin: 10px;
+        height: auto;
+      }
+    }
+
+    &--description {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9em;
+
+      .points {
+        color: #555;
+        font-size: 0.8em;
+        margin-left: 1em;
+      }
+    }
+  }
+}

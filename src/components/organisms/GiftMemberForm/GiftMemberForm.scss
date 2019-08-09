@@ -1,0 +1,44 @@
+@import "../../../styles/common/shared";
+@import "../../../styles/layout/shared";
+
+.GiftMemberForm {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: $width-box;
+
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    @extend %--fw_container;
+  }
+
+  &--forms {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: $header-height;
+
+    &__title {
+      width: 100%;
+      text-align: start;
+    }
+
+    &__form {
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      justify-items: center;
+    }
+  }
+}

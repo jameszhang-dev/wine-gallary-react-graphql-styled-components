@@ -1,0 +1,53 @@
+@import "../../styles/common/shared";
+@import "../../styles/layout/shared";
+
+.InviteFriend {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height;
+    right: auto;
+    left: auto;
+  }
+
+  position: relative;
+  width: $width-box;
+  z-index: 50;
+
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 80px;
+    text-align: center;
+
+    @extend %--fw_container;
+  }
+
+  &--title {
+    text-align: center;
+    width: 100%;
+  }
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+
+    &.social {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    img {
+      width: 180px;
+      height: auto;
+    }
+  }
+}

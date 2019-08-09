@@ -1,0 +1,23 @@
+@import "../../../styles/common/shared";
+@import "../../../styles/layout/shared";
+
+.DiscountCodeForm {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &--form {
+    width: 100%;
+    height: auto;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: normal;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

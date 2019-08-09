@@ -1,0 +1,11 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.QuizAnswer {
+  border: 2px solid black;
+  margin: 20px;
+
+  &--selected {
+    background: red;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.FreeShipping {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+
+  &--button {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 5px;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

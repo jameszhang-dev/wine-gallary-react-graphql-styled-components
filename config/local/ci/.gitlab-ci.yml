@@ -1,0 +1,16 @@
+image: node:10.13.0
+
+stages:
+ - ci
+
+before_script:
+  - cp config/local/ci/.env.ci config/local/.env.local
+  - cp config/local/ci/.env.ci config/.env
+
+yarn_ci:
+  stage: ci
+  script:
+    - yarn install
+    - yarn eslint
+    - yarn stylelint
+    - yarn test-with-coverage

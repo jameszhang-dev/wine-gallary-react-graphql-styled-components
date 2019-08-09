@@ -1,0 +1,12 @@
+@import '../../styles/common/shared';
+
+.RedeemGift {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height + 30px;
+    right: auto;
+    left: auto;
+  }
+}

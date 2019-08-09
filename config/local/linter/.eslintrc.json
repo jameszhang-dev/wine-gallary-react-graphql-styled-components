@@ -1,0 +1,118 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "eslint-plugin-import"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jasmine": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 110
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": false
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "react/destructuring-assignment": [
+      "error",
+      "always",
+      {
+        "ignoreClassFields": true
+      }
+    ],
+    "padded-blocks": [
+      "off",
+      "never"
+    ],
+    "lines-around-comment": [
+      "error",
+      {
+        "beforeBlockComment": true,
+        "afterBlockComment": false,
+        "beforeLineComment": true,
+        "afterLineComment": false,
+        "allowBlockStart": true,
+        "allowBlockEnd": false,
+        "allowObjectStart": true,
+        "allowArrayStart": true,
+        "allowClassStart": true
+      }
+    ],
+    "no-trailing-spaces": [
+      "error",
+      {
+        "ignoreComments": true,
+        "skipBlankLines": false
+      }
+    ],
+    "no-confusing-arrow": [
+      "error",
+      {
+        "allowParens": true
+      }
+    ],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "parent", "sibling", "index"]
+      }
+    ],
+    "import/newline-after-import": [
+      "error",
+      {
+        "count": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+@import "../../styles/common/shared";
+@import "../../styles/layout/shared";
+
+.SignUp {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height;
+    right: auto;
+    left: auto;
+  }
+
+  position: relative;
+  width: $width-box;
+  z-index: 50;
+
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    @extend %--fw_container;
+  }
+
+  &--forms {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: $header-height;
+
+    &__title {
+      width: 100%;
+      text-align: start;
+      margin: {
+        top: 40px;
+        bottom: 40px;
+      }
+    }
+
+    &__form {
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      align-items: flex-start;
+      justify-items: center;
+
+      button {
+        background-color: #fff;
+        border: 3px solid $brand-danger;
+        border-radius: 5px;
+        color: $brand-danger;
+        font-weight: bold;
+        font-size: 1rem;
+        min-height: 50px;
+        margin: 15px 0;
+        text-transform: uppercase;
+        width: 300px;
+
+        &:hover {
+          background-color: $brand-danger;
+          color: white;
+        }
+      }
+    }
+
+    &__social {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      align-items: flex-end;
+    }
+  }
+}

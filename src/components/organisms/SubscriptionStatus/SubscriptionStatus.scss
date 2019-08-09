@@ -1,0 +1,37 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.SubscriptionStatus {
+  width: 100%;
+  height: auto;
+
+  &--container {
+    border: 1px solid black;
+  }
+
+  &--cta {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &--status {
+    font-size: 1.5rem;
+
+    &.active {
+      color: $active;
+    }
+
+    &.skip {
+      color: $skip;
+    }
+
+    &.cancelled {
+      color: $cancel;
+    }
+
+    &.pause {
+      color: $pause;
+    }
+  }
+}

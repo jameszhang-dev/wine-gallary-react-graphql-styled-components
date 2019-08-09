@@ -1,0 +1,27 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.QuizQuestion {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: 20px;
+  }
+
+  position: relative;
+  width: $width-box;
+  z-index: 50;
+
+  &--container {
+    width: 100%;
+  }
+
+  &--title {
+    text-align: start;
+  }
+
+  select {
+    width: 100%;
+  }
+}

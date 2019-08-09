@@ -1,0 +1,30 @@
+@import '../../styles/common/shared';
+@import '../../styles/layout/shared';
+
+.WineDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: {
+    left: auto;
+    right: auto;
+    top: $header-height;
+  }
+
+  &--cover {
+    width: 100%;
+    min-height: 1000px;
+
+    h1,
+    h2 {
+      letter-spacing: 0.3em;
+      color: white;
+      font-size: 2.5em;
+      font-weight: 900;
+    }
+  }
+
+  &--details {
+    margin-top: 10px;
+  }
+}

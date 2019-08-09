@@ -1,0 +1,8 @@
+/*
+    # https://infosec.mozilla.org/guidelines/web_security#x-frame-options
+    Content-Security-Policy: default-src 'self'; frame-src 'self' https://winegallery.netlify.com https://js.stripe.com/; frame-ancestors https://js.stripe.com/; script-src 'self' 'unsafe-inline' https://js.stripe.com/ https://storage.googleapis.com/ https://cdn.segment.com/; connect-src 'self' https://development.thewinegallery.com.au/o/token/ https://development.thewinegallery.com.au/graphql https://api.stripe.com https://sentry.io/api/ https://api.segment.io/; img-src 'self' data: https://s3-ap-southeast-2.amazonaws.com/ https://development.thewinegallery.com.au/; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; report-uri https://thewinegallery.report-uri.com/r/d/csp/enforce;
+    X-Frame-Options: DENY
+    X-XSS-Protection: 1; mode=block
+    # On example.com, only send the Referer header when loading or linking to other example.com resources
+    Referrer-Policy: same-origin
+    X-Content-Type-Options: nosniff

@@ -1,0 +1,33 @@
+@import "../../../styles/common/shared";
+@import "../../../styles/layout/shared";
+
+.GiveFreeTrialForm {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 80px;
+  text-align: center;
+
+  @extend %--fw_container;
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+
+    &.social {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    img {
+      width: 180px;
+      height: auto;
+    }
+  }
+}

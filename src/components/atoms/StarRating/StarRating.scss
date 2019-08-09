@@ -1,0 +1,67 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.StarRating {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 20px 0;
+
+  .star {
+    margin: 5px 0;
+    position: relative;
+    display: block;
+    color: $light-grey;
+    width: 0;
+    height: 0;
+    border-right: 14px solid transparent;
+    border-bottom: 9px solid $light-grey;
+    border-left: 9px solid transparent;
+    transform: rotate(35deg);
+    outline: none;
+
+    &.selected {
+      border-bottom-color: $brand-warning;
+      color: $brand-warning;
+    }
+  }
+
+  .star::before {
+    border-bottom: 8px solid $light-grey;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -4.5px;
+    left: -6.5px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+
+  .star.selected::before {
+    border-bottom-color: $brand-warning;
+  }
+
+  .star::after {
+    position: absolute;
+    display: block;
+    color: $light-grey;
+    top: 3px;
+    left: -11.5px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 6px solid $light-grey;
+    border-left: 13px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+  .star.selected::after {
+    border-bottom-color: $brand-warning;
+    color: $brand-warning;
+  }
+}

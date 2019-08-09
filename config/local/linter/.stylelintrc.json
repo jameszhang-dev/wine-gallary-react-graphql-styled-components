@@ -1,0 +1,39 @@
+{
+  "extends": "stylelint-config-standard",
+  "processors": [
+    "postcss-import"
+  ],
+  "plugins": [
+    "stylelint-a11y",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "max-line-length": 110,
+    "no-empty-source": null,
+    "no-duplicate-at-import-rules": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "indentation": [
+      2,
+      {
+        "severity": "warning"
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "function",
+          "if",
+          "each",
+          "include",
+          "mixin",
+          "extend"
+        ]
+      }
+    ]
+  }
+}

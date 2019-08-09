@@ -1,0 +1,17 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.WineListSelection {
+  width: 100%;
+  height: auto;
+
+  &--container {
+    margin: 0 auto;
+    border: 1px dashed black;
+    max-width: 300px;
+  }
+
+  &--items {
+    list-style: none;
+  }
+}

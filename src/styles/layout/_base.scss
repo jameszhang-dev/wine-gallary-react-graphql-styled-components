@@ -1,0 +1,45 @@
+@import '../common/shared';
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding:
+    constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom)
+    constant(safe-area-inset-left);
+
+  &--content {
+    padding-top: 0;
+    margin-top: 60px;
+    min-height: 100%;
+    height: 100%;
+  }
+
+  > header {
+    flex: 0 0 $header-height;
+    width: 100%;
+    display: flex;
+  }
+
+  > main {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  > footer {
+    flex: 0 0 60px;
+  }
+}
+
+.container {
+  &--inner {
+    width: 97%;
+    max-width: $max-width-box;
+    margin: {
+      right: auto;
+      left: auto;
+    }
+
+    padding: 0 1%;
+  }
+}

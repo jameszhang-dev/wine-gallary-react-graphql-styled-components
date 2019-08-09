@@ -1,0 +1,27 @@
+@import "../../styles/common/shared";
+@import "../../styles/layout/shared";
+
+.DashboardBadges {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height;
+    right: auto;
+    left: auto;
+  }
+
+  position: relative;
+  width: $width-box;
+
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    @extend %--fw_container;
+  }
+}

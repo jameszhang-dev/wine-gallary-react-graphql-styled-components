@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+
+  twgweb:
+    build:
+      context: ../../..
+      dockerfile: config/local/docker/Dockerfile
+    volumes:
+      - '../../..:/var/code/'
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development

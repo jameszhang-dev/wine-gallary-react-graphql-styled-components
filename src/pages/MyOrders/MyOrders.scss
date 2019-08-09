@@ -1,0 +1,52 @@
+@import "../../styles/common/shared";
+@import "../../styles/layout/shared";
+
+.MyOrders {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height;
+    right: auto;
+    left: auto;
+  }
+
+  position: relative;
+  width: $width-box;
+  z-index: 50;
+
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    @extend %--fw_container;
+  }
+
+  &--table {
+    width: 100%;
+    margin-top: 50px;
+
+    table {
+      width: 100%;
+      border-spacing: unset;
+
+      thead {
+        text-transform: uppercase;
+      }
+
+      th,
+      td {
+        padding: 5px;
+        border-bottom: 1px solid $light-grey;
+      }
+
+      tr:hover {
+        background-color: rgba(1, 1, 1, 0.1);
+      }
+    }
+  }
+}

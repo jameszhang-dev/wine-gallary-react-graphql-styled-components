@@ -1,0 +1,8 @@
+@import '../common/shared';
+
+%--fw_container {
+  width: $width-box;
+  max-width: $max-width-box;
+  padding: $padding-box;
+  display: flex;
+}

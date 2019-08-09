@@ -1,0 +1,28 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.WineBlacklistRule {
+  width: 100%;
+  height: auto;
+
+  &--container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  &--title {
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  &--choices {
+    max-height: 150px;
+    border: 1px solid black;
+    overflow: auto;
+    max-width: 300px;
+    padding: 5px;
+  }
+}

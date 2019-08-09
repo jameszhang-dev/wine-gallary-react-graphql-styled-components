@@ -1,0 +1,23 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.NewPaymentMethod {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .close-btn {
+      padding: 10px;
+      margin: 5px;
+    }
+  }
+
+  &--form {
+    margin: 20px 0;
+  }
+}

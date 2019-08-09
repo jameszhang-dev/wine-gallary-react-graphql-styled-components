@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Interstate-BlackCompressed';
+  src:
+    url('InterstateBlackCompressed.woff2') format('woff2'),
+    url('InterstateBlackCompressed.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Interstate-UltraBlack';
+  src:
+    url('Interstate-UltraBlack.woff2') format('woff2'),
+    url('Interstate-UltraBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}

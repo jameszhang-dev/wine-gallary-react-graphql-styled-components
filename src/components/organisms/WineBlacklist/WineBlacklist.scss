@@ -1,0 +1,13 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.WineBlacklist {
+  width: $width-box;
+  height: auto;
+  margin: 20px 0;
+  display: flex;
+
+  &--container {
+    width: $width-box;
+  }
+}

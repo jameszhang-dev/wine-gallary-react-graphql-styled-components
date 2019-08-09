@@ -1,0 +1,14 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.WineRatingItem {
+  button.like {
+    background: $brand-success;
+    color: #fff;
+  }
+
+  button.not-like {
+    background: $brand-danger;
+    color: #fff;
+  }
+}

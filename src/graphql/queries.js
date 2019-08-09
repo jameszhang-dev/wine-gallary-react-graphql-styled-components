@@ -1,0 +1,95 @@
+/**
+ * All queries should be imported and exported to and from this file.
+ * */
+
+// Wine
+import {
+  GET_FOODS,
+  GET_SEASONS,
+  GET_TASTES,
+  GET_WINE,
+  GET_WINE_SLUG,
+  GET_WINE_BODIES,
+  GET_WINE_COLOURS,
+  GET_WINE_COUNTRIES,
+  GET_WINE_PRICE_POINTS,
+  GET_WINE_PRODUCTIONS,
+  GET_WINE_SWEETNESSES,
+  GET_WINE_TANNINS,
+  GET_WINE_TYPES,
+  GET_WINES,
+} from './resolvers/wine';
+
+// Member
+import {
+  GET_ALL_WINE_BLACKLIST_TYPES,
+  GET_MEMBER,
+  GET_SHOPPING_CART,
+  GET_REFERRAL_DISCOUNT,
+} from './resolvers/member';
+
+// Quiz
+import { GET_QUIZ_QUESTIONS } from './resolvers/quiz';
+
+// Special Pack
+import { GET_ALL_SPECIAL_PACKS, GET_SPECIAL_PACK_DETAILS } from './resolvers/specialPack';
+
+// Badge
+import { GET_MEMBER_BADGES_BY_CATEGORY } from './resolvers/badge';
+
+// Gifts
+import {
+  GET_ALL_GIFT_DELIVERIES,
+  GET_ALL_GIFT_PLANS,
+  GET_ALL_GIFT_TEMPLATES,
+  GET_GIFT_PLAN,
+} from './resolvers/gift';
+
+// Shipping
+import {
+  GET_ALL_SHIPPING_PRE_PAID_PLANS,
+} from './resolvers/shipping';
+
+// Orders
+import {
+  GET_FREE_BOX_CAMPAIGN,
+  GET_GUEST_FREE_BOX_CAMPAIGN_DISCOUNT,
+} from './resolvers/order';
+
+// Auth
+import {
+  GET_AUTH,
+} from './resolvers/auth';
+
+export {
+  GET_ALL_SPECIAL_PACKS,
+  GET_ALL_WINE_BLACKLIST_TYPES,
+  GET_FOODS,
+  GET_MEMBER,
+  GET_MEMBER_BADGES_BY_CATEGORY,
+  GET_QUIZ_QUESTIONS,
+  GET_REFERRAL_DISCOUNT,
+  GET_SEASONS,
+  GET_SHOPPING_CART,
+  GET_SPECIAL_PACK_DETAILS,
+  GET_TASTES,
+  GET_WINE,
+  GET_WINE_SLUG,
+  GET_WINES,
+  GET_WINE_BODIES,
+  GET_WINE_COLOURS,
+  GET_WINE_COUNTRIES,
+  GET_WINE_PRICE_POINTS,
+  GET_WINE_PRODUCTIONS,
+  GET_WINE_SWEETNESSES,
+  GET_WINE_TANNINS,
+  GET_WINE_TYPES,
+  GET_ALL_GIFT_DELIVERIES,
+  GET_ALL_GIFT_PLANS,
+  GET_ALL_GIFT_TEMPLATES,
+  GET_GIFT_PLAN,
+  GET_ALL_SHIPPING_PRE_PAID_PLANS,
+  GET_FREE_BOX_CAMPAIGN,
+  GET_GUEST_FREE_BOX_CAMPAIGN_DISCOUNT,
+  GET_AUTH,
+};

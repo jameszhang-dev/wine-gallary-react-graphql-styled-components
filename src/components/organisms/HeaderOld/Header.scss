@@ -1,0 +1,75 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.Header {
+  height: $header-height;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+
+  position: relative;
+  padding: $padding-box;
+  width: $width-box;
+  z-index: 100;
+
+  &--container {
+    @extend %--fw_container;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &--brand {
+    position: relative;
+    width: 15%;
+    height: auto;
+    padding: 15px 2.5%;
+
+    &__logo {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &--main-navigation {
+    justify-self: flex-end;
+    z-index: 100;
+
+    &--list {
+      margin: 15px 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        margin: 0 10px;
+
+        a {
+          text-decoration: none;
+          font-size: 1.2rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        button {
+          background: transparent;
+          border: none;
+          text-decoration: none;
+          font-size: 1.2rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

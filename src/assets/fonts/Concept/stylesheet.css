@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Concept-Regular';
+  src:
+    url('Concept-Regular.woff2') format('woff2'),
+    url('Concept-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concept-Italic';
+  src:
+    url('ConceptItalic.woff2') format('woff2'),
+    url('ConceptItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}

@@ -1,0 +1,26 @@
+.CheckBox {
+  margin: 8px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+
+  &--label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    cursor: pointer;
+
+    span {
+      width: 80%;
+      text-wrap: normal;
+      text-align: left;
+    }
+
+    input {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}

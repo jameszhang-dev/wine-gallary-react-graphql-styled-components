@@ -1,0 +1,14 @@
+.WineSorters {
+  &--inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &--filter {
+    width: 22%;
+    border: 1px solid black;
+    margin: 20px 1%;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../../styles/common/shared";
+@import "../../../styles/layout/shared";
+
+.OrderSummary {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &--container {
+    height: auto;
+    width: 100%;
+    box-shadow: $card-shadow;
+
+    &__inner {
+      padding: 20px;
+
+      :not(h2) {
+        text-align: start;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+
+      li {
+        margin: 8px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../styles/common/shared";
+@import "../../styles/layout/shared";
+
+.Dashboard {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height;
+    right: auto;
+    left: auto;
+  }
+
+  position: relative;
+  width: $width-box;
+  z-index: 50;
+
+  &--links {
+    margin-top: 20px;
+  }
+
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    @extend %--fw_container;
+  }
+
+  &--sections {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: $header-height;
+
+    &__title {
+      width: 100%;
+      text-align: start;
+      margin: {
+        top: 40px;
+        bottom: 40px;
+      }
+    }
+
+    &__subscription-summary {
+      width: 100%;
+    }
+
+    &--stats {
+      display: flex;
+      width: 100%;
+      margin-top: 40px;
+
+      &__progress {
+        width: 50%;
+        display: inline-flex;
+      }
+
+      &__badges {
+        width: 50%;
+        display: inline-flex;
+      }
+    }
+  }
+}

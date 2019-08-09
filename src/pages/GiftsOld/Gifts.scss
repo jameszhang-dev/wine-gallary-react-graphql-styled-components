@@ -1,0 +1,58 @@
+@import "../../styles/common/shared";
+@import "../../styles/layout/shared";
+
+.Gifts {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: $header-height;
+    right: auto;
+    left: auto;
+  }
+
+  position: relative;
+  width: $width-box;
+  z-index: 50;
+
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    @extend %--fw_container;
+  }
+
+  &--sections {
+    width: 100%;
+    margin: 30px 0;
+
+    &--gift-details {
+      &__cta-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .button-large.hide {
+          display: none;
+        }
+      }
+    }
+
+    &--members-details {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.button-large {
+  width: 22%;
+  background-color: transparent;
+  min-height: 60px;
+  height: auto;
+  font-size: 2em;
+}

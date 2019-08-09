@@ -1,0 +1,38 @@
+@import '../../../styles/common/shared';
+@import '../../../styles/layout/shared';
+
+.WineItems {
+  margin: 10px 0;
+
+  &--image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div {
+      border: 1px dashed black;
+      min-height: 70px;
+      margin: 20px 1%;
+      padding: 15px 2px;
+      width: 22%;
+    }
+  }
+
+  button {
+    background-color: #fff;
+    border: 3px solid $brand-danger;
+    border-radius: 5px;
+    color: $brand-danger;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 50px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    width: 100px;
+  }
+}

@@ -1,0 +1,14 @@
+.WineFilters {
+  &--inner {
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &--filter {
+    width: 22%;
+    border: 1px solid black;
+    margin: 20px 1%;
+  }
+}
